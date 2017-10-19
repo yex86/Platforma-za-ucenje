@@ -1,85 +1,193 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Platforma za ucenje </title> <!--// PROMENI U ĆIRILICU, vidi za lat. i eng.-->
+	<title> Платформа за учење и забаву </title>
 	<meta charset="utf-8" >
 	<meta name="keywords" content="Html, Css, Platforma za učenje i zabavu">
-	<meta name="Brankica Milovanović" content="Header, Logo, Pictures">
-	<meta name="Maja Majkić" content="Footer, Links to Social Media">
-	<meta name="Velibor Milović" content="Block">
-	<meta name="Sanja Stojadinović" content="Fonts">
 	<meta name="Jelena Kostić" content=" Html, Css, Dizajn">
-	<meta  name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:500i&amp;subset=cyrillic-ext" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Kurale&amp;subset=cyrillic-ext" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-	<header>
-		<div style="width:100%; background-color:#0066cc; position:absolute; top:1;"> 
-	</header>
-	<br>
-		<img  src="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/19598943_10209262065365686_3243987299439913749_n.jpg?oh=8fe8be8645aa4facbc373a30376bb136&oe=59DF9081" alt="Platforma za učenje i zabavu" width="300" height="150">
-	<br>
+		<p id="txtleft"> <strong> Платформа за </strong> </p> 
+		<img class="headimg" src="https://cdn.pixabay.com/photo/2013/07/13/12/43/boy-160168_960_720.png"> 
+		<p id="txtright"> <strong> учење и забаву </strong> </p> 
+	<br> 
+
 	<ul>
-		<li> <a href="#Početna strana"> Početna strana </a> </li>
+		<li> <a class="active" href="index.html"> Почетна страна </a> </li>
 		<li class="dropdown"> 
-			<a href="javascript:void (0)" class="dropbtn"> Razredi </a> 
+			<a href="javascript:void (0)" class="dropbtn"> Разреди </a> 
 			<div class="dropdown-content"> 
-				<a class="active" href="#"> Prvi razred </a>
-				<a href="#"> Drugi razred </a>
-				<a href="#"> Treći razred </a>
-				<a href="#"> Četvrti razred </a>
+				<a href="prviRazred.html"> Први разред </a>
+				<a href="drugiRazred.html"> Други разред </a>
+				<a href="treciRazred.html"> Трећи разред </a>
+				<a href="cetvrtiRazred.html"> Четврти разред </a>
 			</div>
 		</li>
 		<li class="dropdown"> 
-			<a href="javascript:void (0)" class="dropbtn"> Igrice </a> 
+			<a href="javascript:void (0)" class="dropbtn"> Игрице </a> 
 			<div class="dropdown-content"> 
-				<a href="#"> Domaće životinje </a>
-				<a href="#"> Divlje životinje </a>
+				<a href="zabava.html"> Забави се док учиш </a>
+				<a href="provera.html"> Провери шта си научио </a>
 			</div>
 		<li class="dropdown"> 
-			<a href="javascript:void (0)" class="dropbtn"> O nama </a> 
+			<a href="javascript:void (0)" class="dropbtn"> О нама </a> 
 			<div class="dropdown-content"> 
-				<a href="#"> Web dizajn tim </a>
-				<a href="#"> Tim za kreiranje edukativnog sadržaja </a>
-				<a href="#"> Tim za razvoj i kreiranje igrica </a>
-				<a href="#"> Administratori </a>
+				<a href="webDizajn.html"> Веб дизајн тим </a>
+				<a href="edukativniDizajn.html"> Тим за креирање и развој едукативног садржаја </a>
+				<a href="gameDizajn.html"> Тим за развој и креирање игрица </a>
 			</div>
-		<li> <a href="#Kontakt"> Kontakt </a> </li>
+		<li> <a href="kontakt.html"> Контакт </a> </li>
 	</ul>
-	<h1> Nastavni predmeti za 1. razred </h1>
-	<!--// probaj sa Flexible Box -->
-	<div class="box1"> <h2> <strong> Srpski jezik </strong> </h2> 
- <img src="https://cdn.pixabay.com/photo/2017/03/07/16/22/kids-2124517_960_720.jpg" style="width:128px; height:128px;">	
-		<p> <i> 
-		<a href="html_images.asp" target="_blank"> 1. zadatak </a> <br>
-		<a href="html_images.asp" target="_blank"> 2. zadatak </a> <br>
-		<a href="html_images.asp" target="_blank"> 3. zadatak </a> <br>
-		<a href="html_images.asp" target="_blank"> 4. zadatak </a> <br>
-		<a href="html_images.asp" target="_blank"> 5. zadatak </a> <br>
-		</i> </p>
+	<h1> Добродошли на прву платформу за учење и забаву у Србији </h1>
+
+	<h2>Carousel Example</h2> 
+<div class="container">
+		<!--<h2> Овде иде неки глупи текст </h2 style="text-align: center;">
+		<p> <i> Лорем ипсум долор сит амет, меа ут дицунт алтерум, ех видит сенсибус ехпетендис нец. Ностер цонсететур ан усу, солум поссим аргументум ет еум, не уллум доцтус вис. Дицта видиссе адолесценс не цум.</i> </p>-->
+
+		 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
+      <li data-target="#myCarousel" data-slide-to="9"></li>
+      <li data-target="#myCarousel" data-slide-to="10"></li>
+      <li data-target="#myCarousel" data-slide-to="11"></li>
+      <li data-target="#myCarousel" data-slide-to="12"></li>
+      <li data-target="#myCarousel" data-slide-to="13"></li>
+      <li data-target="#myCarousel" data-slide-to="14"></li>
+      <li data-target="#myCarousel" data-slide-to="15"></li>
+      <li data-target="#myCarousel" data-slide-to="16"></li>
+      <li data-target="#myCarousel" data-slide-to="17"></li>
+      <li data-target="#myCarousel" data-slide-to="18"></li>
+      <li data-target="#myCarousel" data-slide-to="19"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/galerija/1.jpg" alt="galerija">
+      </div>
+    
+      <div class="item">
+        <img src="images/galerija/2.jpg" alt="galerija" >
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/3.jpg" alt="galerija" >
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/4.jpg" alt="galerija" >
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/5.jpg" alt="galerija">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/6.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/7.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/8.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/9.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/10.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/11.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/12.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/13.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/14.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/15.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/16.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/17.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/galerija/18.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+       <div class="item">
+        <img src="images/galerija/19.jpg" alt="galerija" style="width:100%;">
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<footer>
+	<div>
+		Пратите нас и на: 
+		<hr>
+			<a href="http://facebook.com"> <img class="footimg" src="https://cdn0.iconfinder.com/data/icons/social-media-2127/48/social_media_social_media_logo_facebook-48.png" alt="facebook"> </a> 
+			<a href="http://twitter.com"> <img class="footimg" src="https://cdn0.iconfinder.com/data/icons/social-media-2127/48/social_media_social_media_logo_twitter-48.png" alt="twitter"> </a> 
+			<a href="http://instagram.com"> <img class="footimg" src="https://cdn0.iconfinder.com/data/icons/social-media-2127/48/social_media_social_media_logo_instagram-48.png" alt="instagram"> </a>
+			<br> <br>	
+		<hr>  <!--URADI PORTFOLIO-->
+			&copy; 2017 Created by <a href="default.asp" target="_blank"> #yex86 </a>	
 	</div>
-		 <br>
-<div class="box2";> <h3> <strong> Matematika </strong> </h3>
- <img src="https://cdn.pixabay.com/photo/2017/03/07/16/20/kids-2124515_960_720.jpg" style="width:128px; height:128px;">
-		<p> <i>
-		<a href="html_images.asp" target="_blank"> 1. zadatak </a> <br>
-		<a href="html_images.asp" target="_blank"> 2. zadatak </a> <br>
-		<a href="html_images.asp" target="_blank"> 3. zadatak </a> <br>
-		<a href="html_images.asp" target="_blank"> 4. zadatak </a> <br>
-		<a href="html_images.asp" target="_blank"> 5. zadatak </a> <br>
-		</i> </p>
-</div>
-		 <br>
-<div class="box3";> <h4> <strong> Svet oko nas </strong> </h4> 
-	<img src="https://cdn.pixabay.com/photo/2016/03/31/15/21/alphabet-word-images-1293193_960_720.png" style="width:128px; height:128px;">
-		<p> <i>
-		<a href="html_images.asp" target="_blank"> Upoznajmo životinje </a> <br>
-		<a href="html_images.asp" target="_blank"> 2. zadatak </a> <br>
-		<a href="html_images.asp" target="_blank"> 3. zadatak </a> <br>
-		<a href="html_images.asp" target="_blank"> 4. zadatak </a> <br>
-		<a href="html_images.asp" target="_blank"> 5. zadatak </a> <br> 
-		 </i> </p>
-</div>
-		 <br>
+</footer>
+
 </body>
 </html>

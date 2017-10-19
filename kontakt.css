@@ -1,0 +1,27 @@
+/*--obelezivaci--*/
+label {
+    width: 100px;
+    display: inline-block;
+    text-align: right top;
+    font-family: 'Kurale', serif;
+}
+
+/*--polja za unos texta--*/
+textarea {
+	font-family: 'Cormorant Infant', serif;
+	height: 150px;
+	width: 350px;
+}
+
+/*--send dugme--*/
+.button {
+	font-family: 'Kurale', serif;
+	border-radius: 7px;
+	background-color: #0066cc;
+	border-color: cornflowerblue;	
+	border-style: groove;
+	font-size: 15px;
+	float: right;
+	padding: 10px;
+}
+

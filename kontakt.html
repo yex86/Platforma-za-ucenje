@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Платформа за учење и забаву </title>
+	<meta charset="UTF-8">
+	<meta author="yex86" content="html, css, js">
+	<meta name="keywords" content="Html, Css, Platforma za učenje i zabavu">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/box.css">
+	<link rel="stylesheet" type="text/css" href="css/kontakt.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:500i&amp;subset=cyrillic-ext" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Kurale&amp;subset=cyrillic-ext" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+</head>
+<body>
+	<p id="txtleft"> <strong> Платформа за </strong> </p> 
+		<img class="headimg" src="https://cdn.pixabay.com/photo/2013/07/13/12/43/boy-160168_960_720.png"> 
+		<p id="txtright"> <strong> учење и забаву </strong> </p> 
+	<br> 
+
+<!-- <form method="post" enctype="multipart/form-data" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php"> УБАЦИ ОВАКО НЕКУ ФОРМУ ЗА ПОСТОВАЊЕ/направи базу -->
+	<ul>
+		<li> <a href="index.html"> Почетна страна </a> </li>
+		<li class="dropdown"> 
+			<a href="javascript:void (0)" class="dropbtn"> Разреди </a> 
+			<div class="dropdown-content"> 
+				<a href="prviRazred.html"> Први разред </a>
+				<a href="drugiRazred.html"> Други разред </a>
+				<a href="treciRazred.html"> Трећи разред </a>
+				<a href="cetvrtiRazred.html"> Четврти разред </a>
+			</div>
+		</li>
+		<li class="dropdown"> 
+			<a href="javascript:void (0)" class="dropbtn"> Игрице </a> 
+			<div class="dropdown-content"> 
+				<a href="zabava.html"> Забави се док учиш </a>
+				<a href="provera.html"> Провери шта си научио </a>
+			</div>
+		<li class="dropdown"> 
+			<a href="javascript:void (0)" class="dropbtn"> О нама </a> 
+			<div class="dropdown-content"> 
+				<a href="webDizajn.html"> Веб дизајн тим </a>
+				<a href="edukativniDizajn.html"> Тим за креирање и развој едукативног садржаја </a>
+				<a href="gameDizajn.html"> Тим за развој и креирање игрица </a>
+			</div>
+		<li> <a class="active" href="#Kontakt"> Контакт </a> </li>
+	</ul>
+
+	<h1> Контактирајте нас </h1>
+
+<div class="container"> 
+	<div class="box1"> <h3> Контактирај наш Веб дизајн тим </h3>
+		
+		<label for="fname"> Име: </label>
+			<input type="text" id="fname" name="Име" placeholder="Твоје име..." required="Ово поље је обавезно"> 
+		<br> <br>
+		<label for="lname"> Презиме: </label>
+			<input type="text" id="lname" name="Презиме" placeholder="Твоје презиме...">
+		<br> <br>
+		<label for="email"> E-mail: </label>
+            <input type="email" name="email" placeholder="john.doe@gmail.com" required="Ово поље је обавезно"> 
+            <br> <br>
+        <label for="mobile"> Мобилни: </label>
+            <input type="tel" name="usrtel" placeholder="06*/123 45 67" required="Ово поље је обавезно"> 
+            <br> <br>
+		<label for="subject"> </label> <!-- vidi zasto placeholder ne radi -->
+    		<textarea id="subject" name="Порука" placeholder="Напиши своју поруку овде..." 
+    	required="Ово поље је обавезно"> </textarea>
+    	<br> <br>
+    <input class="button" type="submit" value="Пошаљи">
+	</div>
+
+	<div class="box2"> <h3>  Контактирај тим за креирање и развој едукативног садржаја </h3>
+		
+		<label for="fname"> Име: </label>
+			<input type="text" id="fname" name="Име" placeholder="Твоје име..." required="Ово поље је обавезно"> 
+		<br> <br>
+		<label for="lname"> Презиме: </label>
+			<input type="text" id="lname" name="Презиме" placeholder="Твоје презиме...">
+		<br> <br>
+		<label for="email"> E-mail: </label>
+            <input type="email" name="email" placeholder="john.doe@gmail.com" required="Ово поље је обавезно"> 
+            <br> <br>
+        <label for="mobile"> Мобилни: </label>
+            <input type="tel" name="usrtel" placeholder="06*/123 45 67" required="Ово поље је обавезно"> 
+            <br> <br>
+		<label for="subject"> </label> <!-- vidi zasto placeholder ne radi -->
+    		<textarea id="subject" name="Порука" placeholder="Напиши своју поруку овде..."> </textarea>
+    	<br>
+    <input class="button" type="submit" value="Пошаљи">
+	
+	</div>
+
+	<div class="box3"> <h3> Контактирај тим за развој и креирање игрица </h3>
+		
+		<label for="fname"> Име: </label>
+			<input type="text" id="fname" name="Име" placeholder="Твоје име..." required="Ово поље је обавезно"> 
+		<br> <br>
+		<label for="lname"> Презиме: </label>
+			<input type="text" id="lname" name="Презиме" placeholder="Твоје презиме...">
+		<br> <br>
+		<label for="email"> E-mail: </label>
+            <input type="email" name="email" placeholder="john.doe@gmail.com" required="Ово поље је обавезно"> 
+            <br> <br>
+        <label for="mobile"> Мобилни: </label>
+            <input type="tel" name="usrtel" placeholder="06*/123 45 67" required="Ово поље је обавезно"> 
+            <br> <br>
+		<label for="subject"> </label> <!-- vidi zasto placeholder ne radi -->
+    		<textarea id="subject" name="Порука" placeholder="Напиши своју поруку овде..." required="Ово поље је обавезно"> </textarea>
+    	<br> <br>
+    <input class="button" type="submit" value="Пошаљи">
+	
+	</div>
+</div>
+
+	<footer>
+	<div>
+		<div> 
+			 Пратите нас и на: 
+			<hr>
+			<a href="http://facebook.com"> <img src="https://cdn0.iconfinder.com/data/icons/social-media-2127/48/social_media_social_media_logo_facebook-48.png" alt="facebook"> </a>
+			<a href="http://twitter.com"> <img src="https://cdn0.iconfinder.com/data/icons/social-media-2127/48/social_media_social_media_logo_twitter-48.png" alt="twitter"> </a>
+			<a href="http://instagram.com"> <img src="https://cdn0.iconfinder.com/data/icons/social-media-2127/48/social_media_social_media_logo_instagram-48.png" alt="instagram"> </a>	
+			<hr>		
+			&copy; 2017 Created by <a href="default.asp" target="_blank"> #yex86 </a>	
+		</div>
+	</div>
+</footer>	
+
+</body>
+</html>
