@@ -9,6 +9,7 @@
 	float: left;
 	margin: auto;
 	padding: 20px;
+	box-shadow: 0 20px 20px rgba(0,0,0,.2);
 }
 
 .box2 {
@@ -19,6 +20,7 @@
 	float: left;
 	margin: auto;
 	padding: 20px;
+	box-shadow: 0 20px 20px rgba(0,0,0,.2);
 }
 
 .box3 {
@@ -29,6 +31,7 @@
 	float: left;
 	margin: auto;
 	padding: 20px;
+	box-shadow: 0 20px 20px rgba(0,0,0,.2);
 }
 
 .boximg {
