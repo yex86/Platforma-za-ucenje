@@ -5,16 +5,12 @@ label {
     text-align: right top;
     font-family: 'Kurale', serif;
 }
-input {
-    background: cornflowerblue;
-}
 
 /*--polja za unos texta--*/
 textarea {
 	font-family: 'Cormorant Infant', serif;
 	height: 150px;
 	width: 350px;
-	background: cornflowerblue;
 }
 
 /*--send dugme--*/
